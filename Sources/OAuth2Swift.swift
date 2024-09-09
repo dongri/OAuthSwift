@@ -253,7 +253,7 @@ open class OAuth2Swift: OAuthSwift {
                                             completionHandler: completion)
     }
 
-    fileprivate func requestOAuthAccessToken(withParameters parameters: OAuthSwift.Parameters, headers: OAuthSwift.Headers? = nil, customKeypath: String? = nil, completionHandler completion: @escaping TokenCompletionHandler) -> OAuthSwiftRequestHandle? {
+    public func requestOAuthAccessToken(withParameters parameters: OAuthSwift.Parameters, headers: OAuthSwift.Headers? = nil, customKeypath: String? = nil, completionHandler completion: @escaping TokenCompletionHandler) -> OAuthSwiftRequestHandle? {
         return self.client.requestOAuthAccessToken(accessTokenUrl: self.accessTokenUrl, withParameters: parameters,
                                                    headers: headers, contentType: self.contentType,
                                                    accessTokenBasicAuthentification: self.accessTokenBasicAuthentification,
