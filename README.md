@@ -126,6 +126,21 @@ func handleGetURL(event: NSAppleEventDescriptor!, withReplyEvent: NSAppleEventDe
 }
 ```
 
+### SwiftUI
+
+- If you are using SwiftUI, implement `onOpenURL`
+
+```swift
+struct SomeScreen: View {
+    var body: some View {
+        Text("Hello")
+        .onOpenURL { url in
+            OAuthSwift.handle(url: url)
+        }
+    }
+}
+```
+
 ### Authorize with OAuth1.0
 
 ```swift
