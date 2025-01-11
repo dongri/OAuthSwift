@@ -126,6 +126,8 @@ func handleGetURL(event: NSAppleEventDescriptor!, withReplyEvent: NSAppleEventDe
 }
 ```
 
+### SwiftUI
+
 - If you are using SwiftUI, implement `onOpenURL`
 
 ```swift
